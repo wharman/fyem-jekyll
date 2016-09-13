@@ -8,21 +8,4 @@
       <span class="usa-disclaimer-stage">This site is currently in alpha. <a href="https://18f.gsa.gov/dashboard/stages/#alpha">Learn more.</a></span>
     </div>
   </div>
-
-  <nav id="navbar" class="usa-site-navbar">
-    <div class="usa-grid">
-      <div class="usa-width-one-half">
-        <h1 class="logo"><a title="Home" aria-label="Home" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-      </div>
-      <div class="usa-width-one-half">
-        <ul class="subnav usa-unstyled-list">
-          {% for my_page in site.pages %}
-            {% if my_page.title %}
-            <li class="subnav_item"><a class="subnav_link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </nav>
 </header>

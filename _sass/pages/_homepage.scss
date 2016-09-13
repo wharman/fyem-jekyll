@@ -1,0 +1,50 @@
+.banner {
+  @include background(linear-gradient(rgba($color-primary-darkest, 0.92), rgba(darken($color-primary-darkest, 10), 0.92)), url("/assets/img/homepage/banner.jpg"), no-repeat);
+  background-size: cover;
+  min-height: 600px;
+  text-align: center;
+  padding: 6em 0;
+
+  h1 {
+    color: $color-white;
+    font-size: 3.75em;
+    font-weight: normal;
+    margin: 0 auto;
+    max-width: 8em;
+  }
+
+  h2 {
+    color: $color-white;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 1em auto 1em;
+    max-width: 28em;
+  }
+
+  p {
+    color: $color-white;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 0.2em;
+  }
+
+  .decorative-text {
+    font-family: $font-serif;
+  }
+
+  .usa-button-big {
+
+    i {
+      margin-left: 0.2em;
+    }
+
+    &:hover {
+
+      i {
+        @include transition(margin-left 0.2s ease);
+        margin-left: 1.2em;
+      }
+    }
+  }
+}
