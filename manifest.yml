@@ -1,0 +1,12 @@
+---
+applications:
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  disk_quota: 1024M
+  env:
+    FORCE_HTTPS: true
+  instances: 3
+  memory: 64M
+  name: fyem-production
+  path: _site
+  routes:
+    - route: fyem-production.apps.cloud.gov
