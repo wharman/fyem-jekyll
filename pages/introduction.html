@@ -1,0 +1,56 @@
+---
+layout: page
+javascript: index.js
+---
+
+<main>
+  <section class="page-content">
+    <div class="usa-grid">
+      <header class="page-heading">
+        <h1>Introduction</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel
+          blandit turpis. Aenean vestibulum nisi dolor. Curabitur eu purus et nisl
+          laoreet vehicula nec non sapien. Integer porta, nisl eget ultricies
+          tempor, diam odio ultrices nisi, in luctus nulla arcu quis lorem. Mauris
+          consequat, libero eu tristique blandit, mauris mauris aliquet tortor,
+          sed sagittis massa velit et ante.
+        </p>
+      </header>
+
+      <div class="pillars">
+
+        <ul>
+          {% assign tenents = (site.data.tenents | sort_natural: id) %}
+          {% for tenent_hash in tenents %}
+            {% assign tenent = tenent_hash[1] %}
+            <li class="usa-width-one-third">
+              <div class="pillar-icon">
+                <img alt="Icon for {{tenent.title}}" src="/assets/img/tenents/{{tenent.image_file}}" />
+              </div class="pillar-icon">
+              <h2>{{ tenent.title }}</h2>
+              <p>
+                {{ tenent.description }}
+              </p>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="navigation">
+    <div class="previous arrow-container">
+      <div class="arrow">
+        <i class="fa fa-arrow-left"></i>
+      </div>
+      <div class="description">Previous</div>
+    </div>
+    <div class="next arrow-container">
+      <div class="arrow">
+        <i class="fa fa-arrow-right"></i>
+      </div>
+      <div class="description">Next</div>
+    </div>
+  </div>
+</main>

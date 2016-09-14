@@ -1,13 +1,19 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<main class="usa-grid">
-  <div class="usa-width-one-whole">
-    <h1>{{ page.title }}</h1>
-  </div>
+  {% include head.html %}
 
-  <div class="usa-width-one-whole">
+  <body class="page-layout">
+
+    {% include page_header.html %}
+
     {{ content }}
-  </div>
-</main>
+
+    {% include footer.html %}
+
+    {% if page.javascript %}
+    <script src="{{ "/" | append:page.javascript | prepend:"/assets/js/" | prepend:site.baseurl }}"></script>
+    {% endif %}
+  </body>
+
+</html>

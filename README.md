@@ -1,7 +1,4 @@
-# USWDS Prototype
-
-A Jekyll template for prototyping [US Web Design
-Standards][uswds-site] based websites.
+# FYEM Jekyll (Foster Youth Experience Map)
 
 
 ## Prerequisites
@@ -17,9 +14,6 @@ and [npm][npm-site] to manage dependencies.
 
 Clone this template from [github][repo-url].
 
-    $ git clone https://github.com/adborden/uswds-prototype.git
-    $ cd uswds-prototype
-
 Install the dependencies and start the development server.
 
     $ npm install
@@ -28,15 +22,15 @@ Install the dependencies and start the development server.
 
 Open your browser to [http://localhost:4000/](http://localhost:4000/).
 
-## Goals
+## Deployment
 
-This template is meant to stay out of your way. It provides a simple way to use
-the web design standards right out of the box. With `uswds-protoype`, you can
-extend the web design standards, mock up some layouts, and show them to folks.
-
+To deploy this site, run `npm run deploy`. This assumes that you are
+authenticated with [Cloud.gov][cloud-gov] and have targeted the
+`fyem-production` space.
 
 [jekyll-site]: https://jekyllrb.com/
 [node-download]: https://nodejs.org/en/download/
 [npm-site]: https://www.npmjs.com/
 [repo-url]: https://github.com/adborden/uswds-prototype
 [uswds-site]: https://standards.usa.gov/
+[cloud-gov]: https://cloud.gov/

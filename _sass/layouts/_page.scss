@@ -1,0 +1,147 @@
+.navigation {
+  .arrow-container {
+    background-color: $brand-red;
+    cursor: pointer;
+    height: 4em;
+    line-height: 4em;
+    margin-top: -2em;
+    position: fixed;
+    top: 50%;
+    vertical-align: middle;
+
+    &:hover {
+      @include transition(all 0.2s ease);
+      background-color: darken($brand-red, 8);
+
+      .description {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &.next {
+      padding-left: 1.5em;
+      padding-right: 1em;
+      right: 0;
+      text-align: right;
+
+      &:hover {
+        padding-left: 4em;
+
+        .description {
+          right: 4em;
+        }
+      }
+
+      .description {
+        right: 3em;
+      }
+    }
+
+    &.previous {
+      left: 0;
+      padding-left: 1em;
+      padding-right: 1.5em;
+      text-align: left;
+
+      &:hover {
+        padding-right: 6em;
+
+        .description {
+          left: 4em;
+        }
+
+      }
+
+      .description {
+        left: 3em;
+      }
+    }
+
+    .arrow {
+      color: $color-white;
+      font-size: 1.5em;
+    }
+
+    .description {
+      color: $color-white;
+      font-weight: 500;
+      opacity: 0;
+      visibility: none;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+
+.page-layout {
+  background-color: lighten($page-background-color, 3);
+
+  .logo {
+    margin-top: 2em;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+
+      &:hover {
+
+        h1 {
+          color: darken($brand-green, 30);
+        }
+      }
+
+      h1 {
+        @include transition(color 0.2s ease);
+        color: $color-gray-dark;
+      }
+
+      p {
+        color: darken($brand-green, 20);
+      }
+    }
+
+    h1 {
+      font-size: 1.75em;
+      margin: 0;
+    }
+
+    p {
+
+      font-family: $font-serif;
+      font-size: 0.85em;
+      font-style: italic;
+      margin: 0;
+    }
+  }
+
+  .page-heading {
+    margin: 0 auto;
+    max-width: 35em;
+    text-align: center;
+  }
+
+  .pillar-icon {
+    margin: 0 auto;
+    max-width: 5em;
+  }
+
+  .pillars {
+
+    h2 {
+      font-size: 1.25em;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .usa-disclaimer {
+    background-color: $color-white;
+  }
+}

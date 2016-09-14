@@ -18,3 +18,12 @@
     width: auto;
   }
 }
+
+ul {
+  li {
+
+    &:before {
+      display: none;
+    }
+  }
+}
