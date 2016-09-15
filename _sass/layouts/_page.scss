@@ -1,7 +1,9 @@
 .navigation {
+
   .arrow-container {
     background-color: $brand-red;
     cursor: pointer;
+    display: block;
     height: 4em;
     line-height: 4em;
     margin-top: -2em;

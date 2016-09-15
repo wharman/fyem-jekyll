@@ -26,3 +26,7 @@ exclude:
   - npm-debug.log
   - package.json
   - README.md
+collections:
+  stages:
+    output: true
+    permalink: /stages/:path/

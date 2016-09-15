@@ -1,0 +1,66 @@
+---
+layout: page
+title: Stages
+---
+
+<main>
+  <section class="page-content">
+    <div class="usa-grid">
+      <header class="page-heading">
+        <h1>“{{ page.title }}”</h1>
+        <p>{{ page.description }}</p>
+      </header>
+      <div class="feelings">
+        <h2>How might they be feeling at this stage?</h2>
+        <p>
+          {% for feeling in page.feelings %}
+            <span class="feeling">{{ feeling }},</span>
+          {% endfor %}
+        </p>
+      </div>
+      <div class="drivers">
+        <h2>What is likely driving their behavior?</h2>
+        <p>
+          {% for driver in page.drivers %}
+            <span class="driver">{{ driver }},</span>
+          {% endfor %}
+        </p>
+      </div>
+      <div class="family-opps">
+        <h2>Family Strengthening Opportunities</h2>
+        <ul>
+          {% for opportunity in page.family_strengthening_opportunities %}
+            <li>
+              {{ opportunity }}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="family-opps">
+        <h2>Youth Agency Opportunities</h2>
+        <ul>
+          {% for opportunity in page.youth_agency_opportunities %}
+            <li>
+              {{ opportunity }}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+  </section>
+
+  <div class="navigation">
+    <a class="previous arrow-container" href={{ page.previous_url }}>
+      <div class="arrow">
+        <i class="fa fa-arrow-left"></i>
+      </div>
+      <div class="description">Previous</div>
+    </a>
+    <a class="next arrow-container" href={{ page.next_url }}>
+      <div class="arrow">
+        <i class="fa fa-arrow-right"></i>
+      </div>
+      <div class="description">Next</div>
+    </a>
+  </div>
+</main>

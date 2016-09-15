@@ -21,8 +21,7 @@ javascript: index.js
       <div class="pillars">
 
         <ul>
-          {% assign tenents = (site.data.tenents | sort_natural: id) %}
-          {% for tenent_hash in tenents %}
+          {% for tenent_hash in site.data.tenents %}
             {% assign tenent = tenent_hash[1] %}
             <li class="usa-width-one-third">
               <div class="pillar-icon">
@@ -40,17 +39,17 @@ javascript: index.js
   </section>
 
   <div class="navigation">
-    <div class="previous arrow-container">
+    <a class="previous arrow-container" href="/">
       <div class="arrow">
         <i class="fa fa-arrow-left"></i>
       </div>
       <div class="description">Previous</div>
-    </div>
-    <div class="next arrow-container">
+    </a>
+    <a class="next arrow-container" href="/stages/just-a-kid">
       <div class="arrow">
         <i class="fa fa-arrow-right"></i>
       </div>
       <div class="description">Next</div>
-    </div>
+    </a>
   </div>
 </main>
