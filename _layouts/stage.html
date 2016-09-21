@@ -3,7 +3,7 @@ layout: page
 title: Stages
 ---
 
-<main>
+<main class="stage-layout {{ page.title | replace:' ', '-' | replace: '’', '' | downcase }}">
   <section class="page-content">
     <div class="usa-grid">
       <header class="page-heading">
@@ -53,14 +53,51 @@ title: Stages
     <a class="previous arrow-container" href={{ page.previous_url }}>
       <div class="arrow">
         <i class="fa fa-arrow-left"></i>
+        <span>Previous</span>
       </div>
-      <div class="description">Previous</div>
     </a>
+    <div class="stage-nav">
+      <ul>
+        <li class="im-just-a-kid">
+          <a href="/stages/just-a-kid"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
     <a class="next arrow-container" href={{ page.next_url }}>
       <div class="arrow">
+        <span>Next</span>
         <i class="fa fa-arrow-right"></i>
       </div>
-      <div class="description">Next</div>
     </a>
   </div>
 </main>

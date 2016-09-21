@@ -1,77 +1,59 @@
 .navigation {
+  background-color: lighten($page-background-color, 8);
+  bottom: 0;
+  box-shadow: 10px 0 10px rgba($color-black, 0.1);
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
 
   .arrow-container {
     background-color: $brand-red;
     cursor: pointer;
     display: block;
-    height: 4em;
-    line-height: 4em;
-    margin-top: -2em;
-    position: fixed;
-    top: 50%;
+    height: 3em;
+    line-height: 3em;
+    padding: 0 1em;
     vertical-align: middle;
 
     &:hover {
       @include transition(all 0.2s ease);
       background-color: darken($brand-red, 8);
-
-      .description {
-        opacity: 1;
-        visibility: visible;
-      }
     }
 
     &.next {
-      padding-left: 1.5em;
-      padding-right: 1em;
-      right: 0;
+      float: right;
       text-align: right;
 
-      &:hover {
-        padding-left: 4em;
-
-        .description {
-          right: 4em;
-        }
-      }
-
-      .description {
-        right: 3em;
+      i {
+        margin-left: 0.5em;
       }
     }
 
     &.previous {
-      left: 0;
-      padding-left: 1em;
-      padding-right: 1.5em;
+      float: left;
       text-align: left;
 
-      &:hover {
-        padding-right: 6em;
-
-        .description {
-          left: 4em;
-        }
-
+      i {
+        margin-right: 0.5em;
       }
+    }
 
-      .description {
-        left: 3em;
-      }
+    i {
+      font-size: 0.65em;
+    }
+
+    span {
+      font-size: 0.65em
     }
 
     .arrow {
       color: $color-white;
       font-size: 1.5em;
-    }
-
-    .description {
-      color: $color-white;
-      font-weight: 500;
-      opacity: 0;
-      visibility: none;
-      position: absolute;
-      top: 0;
     }
   }
 }
@@ -145,5 +127,40 @@
 
   .usa-disclaimer {
     background-color: $color-white;
+  }
+}
+
+.stage-nav {
+  display: inline-block;
+
+  ul {
+    display: inline-block;
+    margin: 1.2em 0 0 0;
+    max-width: 30em;
+    padding: 0;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      margin: 0 0.8em 0 0;
+
+      a {
+        background-color: lighten($color-gray, 45);
+        border-radius: 50%;
+        display: block;
+        height: 0.6em;
+        width: 0.6em;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.im-just-a-kid {
+        a {
+          background-color: $brand-red;
+        }
+      }
+    }
   }
 }
