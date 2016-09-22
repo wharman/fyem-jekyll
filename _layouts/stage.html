@@ -3,50 +3,98 @@ layout: page
 title: Stages
 ---
 
-<main class="stage-layout {{ page.title | replace:' ', '-' | replace: '’', '' | downcase }}">
+<main class="stage-layout {{ page.title | replace:' ', '-' | replace: '’', '' | replace: '?', '' | downcase }}">
   <section class="page-content">
     <div class="usa-grid">
       <header class="page-heading">
         <h1>“{{ page.title }}”</h1>
-        <p>{{ page.description }}</p>
+        {% if page.description %}
+          <p>{{ page.description }}</p>
+        {% endif %}
       </header>
-      <div class="feelings">
-        <h2>How might they be feeling at this stage?</h2>
-        <p>
-          {% for feeling in page.feelings %}
-            <span class="feeling">{{ feeling }},</span>
+      {% if page.feelings %}
+        <div class="feelings">
+          <h2>How might they be feeling at this stage?</h2>
+          <p>
+            {% for feeling in page.feelings %}
+              <span class="feeling">{{ feeling }},</span>
+            {% endfor %}
+          </p>
+        </div>
+      {% endif %}
+      {% if page.drivers %}
+        <div class="drivers">
+          <h2>What is likely driving their behavior?</h2>
+          <p>
+            {% for driver in page.drivers %}
+              <span class="driver">{{ driver }},</span>
+            {% endfor %}
+          </p>
+        </div>
+      {% endif %}
+      {% if page.family_strengthening_opportunities %}
+        <div class="family-opps">
+          <h2>Family Strengthening Opportunities</h2>
+          <ul>
+            {% for opportunity in page.family_strengthening_opportunities %}
+              <li>
+                {{ opportunity }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+      {% if page.youth_agency_opportunities %}
+        <div class="family-opps">
+          <h2>Youth Agency Opportunities</h2>
+          <ul>
+            {% for opportunity in page.youth_agency_opportunities %}
+              <li>
+                {{ opportunity }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+      {% if page.buckets %}
+        {% for bucket in page.buckets %}
+          {% for bucket_attribute in bucket %}
+            <h2>{{ bucket_attribute.name }}</h2>
+            {% if bucket_attribute.feelings %}
+              <div class="feelings">
+                <h3>How might they be feeling at this stage?</h3>
+                <p>
+                  {% for feeling in bucket_attribute.feelings %}
+                    <span class="feeling">{{ feeling }},</span>
+                  {% endfor %}
+                </p>
+              </div>
+            {% endif %}
+            {% if bucket_attribute.drivers %}
+              <div class="drivers">
+                <h3>What is likely driving their behavior?</h3>
+                <p>
+                  {% for driver in bucket_attribute.drivers %}
+                    <span class="driver">{{ driver }},</span>
+                  {% endfor %}
+                </p>
+              </div>
+            {% endif %}
+            {% if bucket_attribute.family_strengthening_opportunities %}
+              <div class="family-opps">
+                <h3>Family Strengthening Opportunities</h3>
+                <ul>
+                  {% for opportunity in bucket_attribute.family_strengthening_opportunities %}
+                    <li>
+                      {{ opportunity }}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
           {% endfor %}
-        </p>
-      </div>
-      <div class="drivers">
-        <h2>What is likely driving their behavior?</h2>
-        <p>
-          {% for driver in page.drivers %}
-            <span class="driver">{{ driver }},</span>
-          {% endfor %}
-        </p>
-      </div>
-      <div class="family-opps">
-        <h2>Family Strengthening Opportunities</h2>
-        <ul>
-          {% for opportunity in page.family_strengthening_opportunities %}
-            <li>
-              {{ opportunity }}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-
-      <div class="family-opps">
-        <h2>Youth Agency Opportunities</h2>
-        <ul>
-          {% for opportunity in page.youth_agency_opportunities %}
-            <li>
-              {{ opportunity }}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+        {% endfor %}
+      {% endif %}
   </section>
 
   <div class="navigation">
@@ -61,35 +109,41 @@ title: Stages
         <li class="im-just-a-kid">
           <a href="/stages/just-a-kid"></a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="am-i-in-trouble">
+          <a href="/stages/am-i-in-trouble"></a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="where-are-you-taking-me">
+          <a href="/stages/where-are-you-taking-me"></a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="doctors-are-scary">
+          <a href="/stages/doctors-are-scary"></a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="how-did-this-happen">
+          <a href="/stages/how-did-this-happen"></a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="its-up-to-the-judge-now">
+          <a href="/stages/up-to-the-judge-now"></a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="how-long-will-i-be-here">
+          <a href="/stages/how-long-will-i-be-here"></a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="this-is-a-really-big-change">
+          <a href="/stages/big-change"></a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="i-dont-want-anyone-at-school-to-know">
+          <a href="/stages/dont-want-school-to-know"></a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="how-do-i-support-my-family">
+          <a href="/stages/support-my-family"></a>
         </li>
-        <li>
-          <a href="#"></a>
+        <li class="where-do-i-belong">
+          <a href="/stages/where-do-i-belong"></a>
+        </li>
+        <li class="im-on-my-own-now">
+          <a href="/stages/on-my-own-now"></a>
+        </li>
+        <li class="im-learning-to-be-an-adult">
+          <a href="/stages/learning-to-be-an-adult"></a>
         </li>
       </ul>
     </div>
