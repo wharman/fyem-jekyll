@@ -6,7 +6,7 @@ drivers:
 feelings:
   - I may not know how to form a healthy relationship. What does my network look like now? I’m more than just a foster kid… what’s my identity?
 layout: stage
-next_url: "/pages/outro"
+next_url: "/pages/resources"
 previous_url: "/stages/on-my-own-now"
 title: I’m learning to be an adult
 quote:
