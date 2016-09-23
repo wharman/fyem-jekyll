@@ -1,3 +1,15 @@
 .stage-layout {
   padding-bottom: 6em;
+
+  .usa-accordion {
+    display: block;
+
+    li {
+      display: block;
+    }
+  }
+
+  .usa-accordion-button {
+    text-align: left;
+  }
 }

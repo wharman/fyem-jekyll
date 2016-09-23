@@ -57,43 +57,55 @@ title: Stages
         </div>
       {% endif %}
       {% if page.buckets %}
-        {% for bucket in page.buckets %}
-          {% for bucket_attribute in bucket %}
-            <h2>{{ bucket_attribute.name }}</h2>
-            {% if bucket_attribute.feelings %}
-              <div class="feelings">
-                <h3>How might they be feeling at this stage?</h3>
-                <p>
-                  {% for feeling in bucket_attribute.feelings %}
-                    <span class="feeling">{{ feeling }},</span>
-                  {% endfor %}
-                </p>
-              </div>
-            {% endif %}
-            {% if bucket_attribute.drivers %}
-              <div class="drivers">
-                <h3>What is likely driving their behavior?</h3>
-                <p>
-                  {% for driver in bucket_attribute.drivers %}
-                    <span class="driver">{{ driver }},</span>
-                  {% endfor %}
-                </p>
-              </div>
-            {% endif %}
-            {% if bucket_attribute.family_strengthening_opportunities %}
-              <div class="family-opps">
-                <h3>Family Strengthening Opportunities</h3>
-                <ul>
-                  {% for opportunity in bucket_attribute.family_strengthening_opportunities %}
-                    <li>
-                      {{ opportunity }}
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
+        {% assign bucket_index = 1 %}
+        <ul class="usa-accordion">
+          {% for bucket in page.buckets %}
+            {% for bucket_attribute in bucket %}
+              {% if bucket_attribute.name %}
+                <li>
+                  <button class="usa-accordion-button" aria-expanded="{% if bucket_index == 1 %}true{% else %}false{% endif %}" aria-controls="bucket-{{bucket_index}}">
+                    {{ bucket_attribute.name }}
+                  </button>
+                  <div id="bucket-{{bucket_index}}" class="usa-accordion-content" aria-hidden="{% if bucket_index == 1 %}false{% else %}true{% endif %}">
+                    {% if bucket_attribute.feelings %}
+                      <div class="feelings">
+                        <h3>How might they be feeling at this stage?</h3>
+                        <p>
+                          {% for feeling in bucket_attribute.feelings %}
+                            <span class="feeling">{{ feeling }},</span>
+                          {% endfor %}
+                        </p>
+                      </div>
+                    {% endif %}
+                    {% if bucket_attribute.drivers %}
+                      <div class="drivers">
+                        <h3>What is likely driving their behavior?</h3>
+                        <p>
+                          {% for driver in bucket_attribute.drivers %}
+                            <span class="driver">{{ driver }},</span>
+                          {% endfor %}
+                        </p>
+                      </div>
+                    {% endif %}
+                    {% if bucket_attribute.family_strengthening_opportunities %}
+                      <div class="family-opps">
+                        <h3>Family Strengthening Opportunities</h3>
+                        <ul>
+                          {% for opportunity in bucket_attribute.family_strengthening_opportunities %}
+                            <li>
+                              {{ opportunity }}
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    {% endif %}
+                  </div>
+                </li>
+                {% assign bucket_index = bucket_index | plus: 1 %}
+              {% endif %}
+            {% endfor %}
           {% endfor %}
-        {% endfor %}
+        </ul>
       {% endif %}
   </section>
 

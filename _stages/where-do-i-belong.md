@@ -22,7 +22,6 @@ buckets:
     youth_agency_opportunities:
       - Consciously work through re-setting goals for family dynamics and expectations
       - Acknowledge that the young person may be used to more or less independence and negotiate accordingly
-
   bucket_2:
     description: Adopted into a new family
     drivers:
@@ -41,7 +40,6 @@ buckets:
       - Make an effort to understand young person’s existing family and close relationships, and how these might affect or interact with a new family relationship
       - Allow young person to gradually enter the new situation, rather than throwing them into a new place
       - Reassure young person that this is a permanent home, and that they will find stability and support
-
   bucket_3:
     description: "Continuously moved to a new foster or group home = failure of system to achieve permanency"
     drivers:
