@@ -2,5 +2,6 @@ _site
 .log
 .sass-cache
 .DS_store
+./npm-debug.log
 node_modules
 BingSiteAuth.xml
