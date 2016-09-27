@@ -1,0 +1,25 @@
+---
+layout: page
+---
+
+<main class="glossary">
+  <section class="page-content usa-grid">
+    <header class="page-heading">
+      <h1>Glossary</h1>
+    </header>
+    {% for term_hash in site.data.terms %}
+      {% assign term = term_hash[1] %}
+      <h2>{{ term.title }}</h2>
+      <ul class="usa-unstyled-list">
+        {% for definition in term.definitions %}
+          {% assign key = definition[0] %}
+          {% assign value = definition[1] %}
+          <li>
+            <h3>{{ key }}</h3>
+            <p>{{ value }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </section>
+</main>
