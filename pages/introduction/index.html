@@ -25,7 +25,7 @@ javascript: index.js
             {% assign tenent = tenent_hash[1] %}
             <li class="usa-width-one-third">
               <div class="pillar-icon">
-                <img alt="Icon for {{tenent.title}}" src="/assets/img/tenents/{{tenent.image_file}}" />
+                <img alt="Icon for {{tenent.title}}" src="{{ "/assets/img/tenents/" | append: tenent.image_file | prepend: site.baseurl }}"/>
               </div class="pillar-icon">
               <h2>{{ tenent.title }}</h2>
               <p>
@@ -39,12 +39,12 @@ javascript: index.js
   </section>
 
   <div class="navigation">
-    <a class="previous arrow-container" href="/">
+    <a class="previous arrow-container" href="{{ "/" | prepend: site.baseurl }}">
       <div class="arrow">
         <i class="fa fa-arrow-left"></i>
       </div>
     </a>
-    <a class="next arrow-container" href="/stages/just-a-kid">
+    <a class="next arrow-container" href="{{ "/stages/just-a-kid" | prepend: site.baseurl }}">
       <div class="arrow">
         <i class="fa fa-arrow-right"></i>
       </div>
