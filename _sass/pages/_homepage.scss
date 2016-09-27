@@ -1,5 +1,5 @@
 .banner {
-  @include background(linear-gradient(rgba($color-primary-darkest, 0.92), rgba(darken($color-primary-darkest, 10), 0.92)), url("/assets/img/homepage/banner.jpg"), no-repeat);
+  @include background(linear-gradient(rgba($color-primary-darkest, 0.92), rgba(darken($color-primary-darkest, 10), 0.92)), url("../../assets/img/homepage/banner.jpg"), no-repeat);
   background-size: cover;
   min-height: 600px;
   text-align: center;

@@ -25,7 +25,7 @@ javascript: index.js
             {% assign tenent = tenent_hash[1] %}
             <li class="usa-width-one-third">
               <div class="pillar-icon">
-                <img alt="Icon for {{tenent.title}}" src="/assets/img/tenents/{{tenent.image_file}}" />
+                <img alt="Icon for {{tenent.title}}" src="{{ "/assets/img/tenents/{{tenent.image_file}}" | prepend: site.baseurl }}"/>
               </div class="pillar-icon">
               <h2>{{ tenent.title }}</h2>
               <p>
