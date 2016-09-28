@@ -1,0 +1,10 @@
+<section class="steps">
+  <ul class="usa-unstyled-list">
+  {% for category_hash in site.data.categories %}
+    {% assign category = category_hash[1] %}
+    <li class="stage-cat">
+      <span>{{ category.name }}</span>
+    </li>
+  {% endfor %}
+  </ul>
+</section>

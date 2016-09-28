@@ -15,6 +15,7 @@ family_strengthening_opportunities:
   - "Involve schools in supporting families: Supplying mental health services, food pantries, washer and dryer and daycare for teen parents"
   - Leverage the knowledge within communities and neighborhoods to help provide resources
   - Divert funds to re-packaged community-based organization for prevention opportunities
+numeric_id: 1
 layout: stage
 next_url: "/stages/am-i-in-trouble"
 previous_url: "/pages/introduction"

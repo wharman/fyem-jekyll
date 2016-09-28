@@ -14,6 +14,7 @@ feelings:
 family_strengthening_opportunities:
   - Helping families become economically empowered
   - Helping youth and families work together to deliberately discuss the relationship they want to have moving forward
+numeric_id: 10
 layout: stage
 next_url: "/stages/where-do-i-belong"
 previous_url: "/stages/dont-want-school-to-know"

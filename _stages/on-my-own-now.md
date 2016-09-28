@@ -14,6 +14,7 @@ feelings:
   - Rejected
   - Forgotten
   - Who am I?
+numeric_id: 12
 layout: stage
 next_url: "/stages/learning-to-be-an-adult"
 previous_url: "/stages/where-do-i-belong"

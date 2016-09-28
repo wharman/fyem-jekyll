@@ -14,6 +14,7 @@ family_strengthening_opportunities:
   - Find ways to enable guardian and youth advocates to collaborate
   - Acknowledge and work through how court might undermine the guardians’ authority in the youth’s life
   - Be clear about the consequences of choices made at this stage. Suggest recommended actions AND explain what will likely happen if the family chooses to follow recommendations and if they do not.
+numeric_id: 6
 layout: stage
 next_url: "/stages/how-long-will-i-be-here"
 previous_url: "/stages/how-did-this-happen"

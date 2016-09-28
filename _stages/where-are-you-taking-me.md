@@ -15,6 +15,7 @@ family_strengthening_opportunities:
   - Plan removals in advance with the families when possible.
   - Empower biological family to be part of the removal process, i.e. to help reassure and pack for the young person.
   - Include a parent partner to provide coaching for the caregiver and answer questions they may have about the child welfare system.
+numeric_id: 3
 layout: stage
 next_url: "/stages/doctors-are-scary"
 previous_url: "/stages/am-i-in-trouble"

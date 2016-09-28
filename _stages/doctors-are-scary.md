@@ -12,6 +12,7 @@ feelings:
   - Reflective
 family_strengthening_opportunities:
   - TODO
+numeric_id: 4
 layout: stage
 next_url: "/stages/how-did-this-happen"
 previous_url: "/stages/where-are-you-taking-me"

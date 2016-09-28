@@ -6,6 +6,7 @@ drivers:
   - Survival, basic needs, making the “right” decision, wanting to feel valued and respected
 feelings:
   - I may not know how to form a healthy relationship. What does my network look like now? I’m more than just a foster kid… what’s my identity?
+numeric_id: 13
 layout: stage
 next_url: "/pages/resources"
 previous_url: "/stages/on-my-own-now"

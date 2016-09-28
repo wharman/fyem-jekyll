@@ -16,6 +16,7 @@ family_strengthening_opportunities:
   - "Self-Advocacy – Help all stakeholders make a plan for healthy learning and behavior, connect families with prevention services"
   - "Peer Mentors – connect all stakeholders with peers who have experienced what they’re going through."
   - "Coping Skills–connect with therapy, mindfulness exercises"
+numeric_id: 8
 layout: stage
 next_url: "/stages/dont-want-school-to-know"
 previous_url: "/stages/how-long-will-i-be-here"

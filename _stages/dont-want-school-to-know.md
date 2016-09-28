@@ -10,6 +10,7 @@ feelings:
   - Ashamed
 family_strengthening_opportunities:
   - Help the family make a plan for how they will handle talking about their involvement with the system to friends, community, neighbors, teachers, etc.
+numeric_id: 9
 layout: stage
 next_url: "/stages/support-my-family"
 previous_url: "/stages/big-change"

@@ -14,6 +14,7 @@ family_strengthening_opportunities:
   - Provide access to therapy.
   - Be clear about consequences of failing to address safety concerns.
   - Include a parent partner to provide coaching and answer questions.
+numeric_id: 2
 layout: stage
 next_url: "/stages/where-are-you-taking-me"
 previous_url: "/stages/just-a-kid"

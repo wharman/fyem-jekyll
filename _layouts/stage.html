@@ -126,45 +126,12 @@ title: Stages
     </a>
     <div class="stage-nav">
       <ul>
-        <li class="im-just-a-kid">
-          <a href="{{ "/stages/just-a-kid" | prepend: site.baseurl}}"></a>
-        </li>
-        <li class="am-i-in-trouble">
-          <a href="{{ "/stages/am-i-in-trouble" | prepend: site.baseurl}}"></a>
-        </li>
-        <li class="where-are-you-taking-me">
-          <a href="{{ "/stages/where-are-you-taking-me" | prepend: site.baseurl}}"></a>
-        </li>
-        <li class="doctors-are-scary">
-          <a href="{{ "/stages/doctors-are-scary" | prepend: site.baseurl}}"></a>
-        </li>
-        <li class="how-did-this-happen">
-          <a href="{{ "/stages/how-did-this-happen" | prepend: site.baseurl}}"></a>
-        </li>
-        <li class="its-up-to-the-judge-now">
-          <a href="{{ "/stages/up-to-the-judge-now" | prepend: site.baseurl}}"></a>
-        </li>
-        <li class="how-long-will-i-be-here">
-          <a href="{{ "/stages/how-long-will-i-be-here" | prepend: site.baseurl}}"></a>
-        </li>
-        <li class="this-is-a-really-big-change">
-          <a href="{{ "/stages/big-change" | prepend: site.baseurl}}"></a>
-        </li>
-        <li class="i-dont-want-anyone-at-school-to-know">
-          <a href="{{ "/stages/dont-want-school-to-know" | prepend: site.baseurl}}"></a>
-        </li>
-        <li class="how-do-i-support-my-family">
-          <a href="{{ "/stages/support-my-family" | prepend: site.baseurl}}"></a>
-        </li>
-        <li class="where-do-i-belong">
-          <a href="{{ "/stages/where-do-i-belong" | prepend: site.baseurl}}"></a>
-        </li>
-        <li class="im-on-my-own-now">
-          <a href="{{ "/stages/on-my-own-now" | prepend: site.baseurl}}"></a>
-        </li>
-        <li class="im-learning-to-be-an-adult">
-          <a href="{{ "/stages/learning-to-be-an-adult" | prepend: site.baseurl}}"></a>
-        </li>
+        {% assign stages = site.stages | sort: 'numeric_id' %}
+        {% for stage in stages %}
+          <li class="{{ stage.title | replace:' ', '-' | replace: '’', '' | replace: '?', '' | downcase }}">
+            <a href="{{ stage.url | prepend: site.baseurl }}"></a>
+          </li>
+        {% endfor %}
       </ul>
     </div>
     <a class="next arrow-container" href={{ page.next_url | prepend: site.baseurl }}>

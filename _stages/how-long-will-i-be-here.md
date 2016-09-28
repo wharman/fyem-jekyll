@@ -1,6 +1,7 @@
 ---
 audio_file_name: how-long-will-i-be-here
 description: Judge decides placement.
+numeric_id: 7
 layout: stage
 next_url: "/stages/big-change"
 previous_url: "/stages/up-to-the-judge-now"
