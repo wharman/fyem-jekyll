@@ -1,4 +1,5 @@
 ---
+audio_file_name: how-did-this-happen
 layout: stage
 next_url: "/stages/up-to-the-judge-now"
 previous_url: "/stages/doctors-are-scary"

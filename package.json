@@ -7,11 +7,7 @@
     "build": "mkdir -p _site/assets/vendor && cp -R node_modules/uswds/src/fonts node_modules/uswds/src/img _site/assets/ && cp node_modules/uswds/dist/js/uswds.min.js _site/assets/vendor/ && jekyll build",
     "serve": "npm run build && jekyll serve --port 4200",
     "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< HEAD
-    "deploy": "git checkout lk-federalist && git merge origin/master && npm run build && git push origin head"
-=======
-    "deploy": "git checkout federalist && git merge origin/master && npm run build && git push origin head"
->>>>>>> lk-federalist
+    "deploy": "git checkout master && git merge origin/master && npm run build && git push origin head"
   },
   "repository": {
     "type": "git",

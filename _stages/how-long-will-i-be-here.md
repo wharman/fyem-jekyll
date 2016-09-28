@@ -1,4 +1,5 @@
 ---
+audio_file_name: how-long-will-i-be-here
 description: Judge decides placement.
 layout: stage
 next_url: "/stages/big-change"
