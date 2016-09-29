@@ -8,17 +8,29 @@ javascript: index.js
     <div class="usa-grid">
       <header class="page-heading">
         <h1>Introduction</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel
-          blandit turpis. Aenean vestibulum nisi dolor. Curabitur eu purus et nisl
-          laoreet vehicula nec non sapien. Integer porta, nisl eget ultricies
-          tempor, diam odio ultrices nisi, in luctus nulla arcu quis lorem. Mauris
-          consequat, libero eu tristique blandit, mauris mauris aliquet tortor,
-          sed sagittis massa velit et ante.
-        </p>
       </header>
 
+      <p>
+        There are many intelligent, compassionate, and innovative people working to ensure that youth and families leave the child welfare system with more support and skills than they had entering it. How might we improve outcomes for children, youth and families who touch the system? Taking a youth and family-centered approach is one way. Being data-informed to improve business processes is another [Link to data one-sheet]. In this tool, you will find an experience map to help understand how the foster care system works from the youth’s perspective, how families can be supported and strengthened instead of stigmatized to prevent children and youth from entering foster care, and how youth can be given opportunities to develop agency in their own lives.
+      </p>
+      <p>
+        This tool is intended to help with training, refocusing and budgeting decisions, and is not meant to be prescriptive about the child welfare practice. Think of it as a reflection of the needs and wants of clientele. As one of the foster youth alumni working on the task force for this tool said, “Whenever agencies make budget decisions, the things that help us most like mentorship and therapy are always the first to go.
+      </p>
+
+      <h2>What’s the benefit in upstream intervention and strengthening families?</h2>
+      <p>
+        60-85% of children who enter foster care are removed due to neglect[link to the prevention video], a broad term that includes many conditions stemming from poverty, such as improper cribs, exposure to lead paint, and not having enough food to eat. Investing upstream in families who could use extra financial support and connecting them to community partners who can provide it can prevent children from entering foster care. The suggested opportunities for strengthening families in this map come from families who have touched the system for these reasons.
+      </p>
+      <h2>What’s agency and why is it important for youth development?</h2>
+      <p>
+        Agency is having power over yourself and your decisions. Youth who languish in the foster care system and age out before finding permanent, loving homes, will most likely tell you that they struggle to be independent and self-sufficient. They say that the system helps so much that it harms: when children and youth are not provided opportunities to make decisions for themselves, to think through consequences, and to try things (and fail) on their own but with a safety net, the transition to adulthood becomes much more difficult. The suggested opportunities for youth to develop agency, such as staggering payments for transitional housing to slowly help them adjust to paying rent on their own, come from foster youth themselves.
+      </p>
+
       <div class="pillars">
+      <h2>The Three Core Tenets</h2>
+      <p>
+        The three core tenets of foster care are to provide safety, permanency, and wellbeing to young people in the system. To measure each one, it’s important to clearly define what they mean. Below is what safety, permanency and wellbeing mean to the people who have experienced the system.
+      </p>
 
         <ul>
           {% for tenent_hash in site.data.tenents %}
@@ -27,7 +39,7 @@ javascript: index.js
               <div class="pillar-icon">
                 <img alt="Icon for {{tenent.title}}" src="{{ "/assets/img/tenents/" | append: tenent.image_file | prepend: site.baseurl }}"/>
               </div class="pillar-icon">
-              <h2>{{ tenent.title }}</h2>
+              <h3>{{ tenent.title }}</h3>
               <p>
                 {{ tenent.description }}
               </p>
@@ -39,13 +51,28 @@ javascript: index.js
   </section>
 
   <div class="navigation">
-    <a class="previous arrow-container" href="{{ "/" | prepend: site.baseurl }}">
+    <a class="previous arrow-container" href={{ "/" | prepend: site.baseurl }}>
       <div class="arrow">
         <i class="fa fa-arrow-left"></i>
+        <span>Exit</span>
       </div>
     </a>
-    <a class="next arrow-container" href="{{ "/stages/just-a-kid" | prepend: site.baseurl }}">
+    <div class="stage-nav">
+      <ul>
+        <li class="active">
+           <a href="{{ "/pages/introduction" | prepend: site.baseurl }}"></a>
+        </li>
+        {% assign stages = site.stages | sort: 'numeric_id' %}
+        {% for stage in stages %}
+          <li class="{{ stage.title | replace:' ', '-' | replace: '’', '' | replace: '?', '' | downcase }}">
+            <a href="{{ stage.url | prepend: site.baseurl }}"></a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <a class="next arrow-container" href={{ "/stages/just-a-kid" | prepend: site.baseurl }}>
       <div class="arrow">
+        <span>Next</span>
         <i class="fa fa-arrow-right"></i>
       </div>
     </a>

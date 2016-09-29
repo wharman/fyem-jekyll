@@ -11,6 +11,12 @@
     text-decoration: none;
   }
 
+  .active {
+    a {
+      background-color: $brand-red;
+    }
+  }
+
   .arrow-container {
     background-color: $brand-red;
     cursor: pointer;
@@ -121,15 +127,11 @@
 
   .pillars {
 
-    h2 {
+    h3 {
       font-size: 1.25em;
       margin: 0;
       text-align: center;
       text-transform: uppercase;
-    }
-
-    p {
-      text-align: center;
     }
   }
 

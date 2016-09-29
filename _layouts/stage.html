@@ -158,6 +158,9 @@ title: Stages
     </a>
     <div class="stage-nav">
       <ul>
+        <li>
+           <a href="{{ "/pages/introduction" | prepend: site.baseurl }}"></a>
+        </li>
         {% assign stages = site.stages | sort: 'numeric_id' %}
         {% for stage in stages %}
           <li class="{{ stage.title | replace:' ', '-' | replace: '’', '' | replace: '?', '' | downcase }}">
