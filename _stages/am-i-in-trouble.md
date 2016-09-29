@@ -1,5 +1,6 @@
 ---
 audio_file_name: in-trouble
+category_id: 2
 description:
   Alleged maltreatment is reported. CPS responds.
 drivers:

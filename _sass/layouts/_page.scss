@@ -61,6 +61,17 @@
 .page-layout {
   background-color: lighten($page-background-color, 3);
 
+  .categories {
+
+    li {
+      opacity: 0.3;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
   .logo {
     margin-top: 2em;
     text-align: center;

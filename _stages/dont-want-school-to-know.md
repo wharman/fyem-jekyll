@@ -1,5 +1,6 @@
 ---
 audio_file_name: dont-want-school-to-know
+category_id: 4
 description:
   Youth continues going to school.
 drivers:

@@ -1,0 +1,10 @@
+<div class="categories">
+  <ul class="usa-unstyled-list">
+    {% for category_hash in site.data.categories %}
+      {% assign category = category_hash[1] %}
+      <li {% if page.category_id %} {% if page.category_id == forloop.index %} class="stage-cat active" {% else %} class="stage-cat" {% endif %} {% else %} class="stage-cat" {% endif %}>
+        <span>{{ category.name }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

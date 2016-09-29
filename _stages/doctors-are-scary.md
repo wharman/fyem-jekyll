@@ -1,5 +1,6 @@
 ---
 audio_file_name: doctors-are-scary
+category_id: 2
 description:
   Social worker takes child to doctor for a physical.
 drivers:

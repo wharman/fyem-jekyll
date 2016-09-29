@@ -1,5 +1,6 @@
 ---
 audio_file_name: where-do-i-belong
+category_id: 4
 numeric_id: 11
 layout: stage
 next_url: "/stages/on-my-own-now"
