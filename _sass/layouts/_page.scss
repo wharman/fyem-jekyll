@@ -80,32 +80,25 @@
       display: inline-block;
       text-decoration: none;
 
-      &:hover {
-
-        h1 {
-          color: darken($brand-green, 30);
-        }
-      }
-
       h1 {
         @include transition(color 0.2s ease);
         color: $color-gray-dark;
       }
 
       p {
-        color: darken($brand-green, 20);
+        color: $brand-green;
       }
     }
 
-    h1 {
-      font-size: 1.75em;
-      margin: 0;
+    img {
+      margin: 0.25em auto 0;
+      max-width: 13em;
     }
 
     p {
 
       font-family: $font-serif;
-      font-size: 0.85em;
+      font-size: 0.75em;
       font-style: italic;
       margin: 0;
     }
@@ -115,6 +108,10 @@
     margin: 0 auto;
     max-width: 35em;
     text-align: center;
+
+    h1 {
+      margin-top: 1em;
+    }
   }
 
   .pillar-icon {
