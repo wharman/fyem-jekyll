@@ -35,7 +35,7 @@ javascript: index.js
         <ul>
           {% for tenent_hash in site.data.tenents %}
             {% assign tenent = tenent_hash[1] %}
-            <li class="usa-width-one-third">
+            <li class="usa-width-one-third pillar">
               <div class="pillar-icon">
                 <img alt="Icon for {{tenent.title}}" src="{{ "/assets/img/tenents/" | append: tenent.image_file | prepend: site.baseurl }}"/>
               </div class="pillar-icon">
