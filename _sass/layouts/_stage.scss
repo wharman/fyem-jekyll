@@ -1,6 +1,45 @@
 .stage-layout {
   padding-bottom: 6em;
 
+  .opp-content {
+    @include span-columns(10);
+
+    h3,
+    h4 {
+      margin: 0 0 0.2em;
+    }
+
+    ul {
+      margin: 0;
+    }
+  }
+
+  .opp-icon {
+    @include span-columns(2);
+    text-align: center;
+  }
+
+  .opportunity {
+
+    &:after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+
+    &:first-child {
+
+      img {
+        margin: 0 auto;
+        max-width: 6em;
+      }
+    }
+
+    &:last-child {
+      margin-top: 2em;
+    }
+  }
+
   .usa-accordion {
     display: block;
 

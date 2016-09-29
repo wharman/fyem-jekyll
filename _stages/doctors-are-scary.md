@@ -12,7 +12,9 @@ feelings:
   - Anxious
   - Reflective
 family_strengthening_opportunities:
-  - TODO
+  - Inform caregiver(s) about results of youth physical and behavioral health assessments.
+  - Provide insight into trauma-informed care.
+
 numeric_id: 4
 layout: stage
 next_url: "/stages/how-did-this-happen"
