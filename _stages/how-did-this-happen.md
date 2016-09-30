@@ -32,10 +32,10 @@ buckets:
       - Unify to facilitate youth input on case planning
       - "Trauma-informed parenting: Trauma-informed parenting: [http://www.fosteringperspectives.org/fpv18n1/know.htm][http://www.fosteringperspectives.org/fpv18n1/know.htm]"
     youth_agency_opportunities:
-      - Be transparent with youth about the process
-      - Work with youth about the process
+      - Be transparent with youth about the process.
+      - Work with youth about the process.
       - Work with youth to create a youth and family-centered care plan that incorporates their needs and wants.
-      - Place youth in a culturally appropriate home (i.e. LGBTQ-friendly if an LGBTQ youth)
+      - Place youth in a culturally appropriate home (i.e. LGBTQ-friendly if an LGBTQ youth).
   bucket_2:
     description: Placed in a transitional care facility
     drivers:

@@ -23,13 +23,10 @@ resources:
   - WITTY to assess and improve youth and family wellbeing, and use that to inform referrals and community services provided
   - Quickly understand the needs of each user at this stage to know what specific services are needed
 title: I’m on my own now
-quote:
-  TODO
 youth_agency_opportunities:
   - Provide young people with a gradual introduction to adulthood by developing skills, learning responsibilities etc.
-  - Help young people understand the consequences of mistakes when they aren’t in the system
-  - Give young people the resources to process and redefine their identity outside the system
-  - Help young people identify and connect with their networks outside the system
-
+  - Help young people understand the consequences of mistakes when they aren’t in the system.
+  - Give young people the resources to process and redefine their identity outside the system.
+  - Help young people identify and connect with their networks outside the system.
 ---
 

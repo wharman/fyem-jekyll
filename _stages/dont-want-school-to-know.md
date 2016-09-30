@@ -23,8 +23,8 @@ quote:
   TODO
 youth_agency_opportunities:
   - Assist youth in strategies for talking with friends and teachers about their involvement in the system.
-  - Help youth feel safe, cope with labelling and stigma, and feel confident that they are not a bad kid because they are involved in child welfare system
-  - Coping skills for dealing with the outside world after removal
+  - Help youth feel safe, cope with labelling and stigma, and feel confident that they are not a bad kid because they are involved in child welfare system.
+  - Coping skills for dealing with the outside world after removal.
 
 ---
 

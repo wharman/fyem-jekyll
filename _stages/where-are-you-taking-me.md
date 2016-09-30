@@ -30,6 +30,6 @@ youth_agency_opportunities:
   - Plan removals in advance when possible and try not to do them in the middle of the night.
   - Work with transitional caregiver to provide youth with a day or two to adjust to their new surroundings before returning to school.
   - Be transparent about the process.
-  - "Refrain from using punitive language that makes the youth feel like they are in trouble (i.e. separation = okay. Detention = bad)"
-  - Place youth in a culturally appropriate home (i.e. LGBTQ-friendly if an LGBTQ youth)
+  - "Refrain from using punitive language that makes the youth feel like they are in trouble (i.e. separation = okay. Detention = bad)."
+  - Place youth in a culturally appropriate home (i.e. LGBTQ-friendly if an LGBTQ youth).
 ---

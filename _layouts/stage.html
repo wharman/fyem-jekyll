@@ -102,6 +102,25 @@ title: Stages
                     {{ bucket_attribute.name }}
                   </button>
                   <div id="bucket-{{bucket_index}}" class="usa-accordion-content" aria-hidden="{% if bucket_index == 1 %}false{% else %}true{% endif %}">
+                    {% if bucket_attribute.description %}
+                      <p>
+                        {{ bucket_attribute.description }}
+                      </p>
+                    {% endif %}
+                    {% if bucket_attribute.drivers %}
+                      <h3>What is likely driving youth’s behavior?</h3>
+                      <p>
+                        {% for driver in bucket_attribute.drivers %}
+                          <span class="driver">
+                            {% if bucket_attribute.drivers.size != forloop.index %}
+                              {{ driver | append: ", "}}
+                            {% else %}
+                              {{ driver | append: "." }}
+                            {% endif %}
+                          </span>
+                        {% endfor %}
+                      </p>
+                    {% endif %}
                     {% if bucket_attribute.feelings %}
                       <div class="feelings">
                         <h3>What might youth be feeling at this point?</h3>
