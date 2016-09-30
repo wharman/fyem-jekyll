@@ -25,7 +25,13 @@ title: Stages
           <h2>What might youth be feeling at this point?</h2>
           <p>
             {% for feeling in page.feelings %}
-              <span class="feeling">{{ feeling }},</span>
+              <span class="feeling">
+                {% if page.feelings.size != forloop.index %}
+                  {{ feeling | append: ", "}}
+                {% else %}
+                  {{ feeling | append: "." }}
+                {% endif %}
+              </span>
             {% endfor %}
           </p>
         </div>
@@ -35,7 +41,13 @@ title: Stages
           <h2>What is likely driving youth’s behavior?</h2>
           <p>
             {% for driver in page.drivers %}
-              <span class="driver">{{ driver }},</span>
+              <span class="driver">
+                {% if page.drivers.size != forloop.index %}
+                  {{ driver | append: ", "}}
+                {% else %}
+                  {{ driver | append: "." }}
+                {% endif %}
+              </span>
             {% endfor %}
           </p>
         </div>
@@ -95,7 +107,13 @@ title: Stages
                         <h3>What might youth be feeling at this point?</h3>
                         <p>
                           {% for feeling in bucket_attribute.feelings %}
-                            <span class="feeling">{{ feeling }},</span>
+                            <span class="feeling">
+                              {% if bucket_attribute.feelings.size != forloop.index %}
+                                {{ feeling | append: ", "}}
+                              {% else %}
+                                {{ feeling | append: "." }}
+                              {% endif %}
+                            </span>
                           {% endfor %}
                         </p>
                       </div>
