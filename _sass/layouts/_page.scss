@@ -265,7 +265,11 @@
 }
 
 .stage-nav {
-  display: inline-block;
+  display: none;
+
+  @include media($medium-screen) {
+    display: inline-block;
+  }
 
   ul {
     display: inline-block;
@@ -290,5 +294,11 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+.usa-disclaimer-stage {
+  a {
+    color: $color-primary;
   }
 }

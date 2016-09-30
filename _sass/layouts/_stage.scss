@@ -2,7 +2,9 @@
   padding-bottom: 6em;
 
   .opp-content {
-    @include span-columns(10);
+    @include media($medium-screen) {
+      @include span-columns(10);
+    }
 
     h3,
     h4 {
@@ -15,8 +17,12 @@
   }
 
   .opp-icon {
-    @include span-columns(2);
+    display: none;
     text-align: center;
+
+    @include media($medium-screen) {
+      @include span-columns(2);
+    }
   }
 
   .opportunity {
@@ -49,6 +55,11 @@
   }
 
   .usa-accordion-button {
+    background-color: darken($color-gray-lightest, 5);
     text-align: left;
+  }
+
+  .usa-accordion-content {
+    background-color: lighten($color-gray-lightest, 2);
   }
 }
